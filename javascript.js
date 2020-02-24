@@ -8,3 +8,8 @@ const seconds = timeNodes.map(node => node.dataset.time).map(timeCode => {
     return (mins * 60) + secs;
     console.log(mins, secs);
 })
+.reduce((total, vidSeconds) => total + vidSeconds)
+// or
+// .reduce((total, vidSeconds) => {
+//     return total + vidSeconds
+// })
